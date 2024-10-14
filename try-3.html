@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#crop-data">Crop Data</a>
+        <a href="#credits">Credits</a>
+        <button id="themeToggle" class="theme-button">Toggle Theme</button>
+    </div>
+
+    <h1 id="home">Environmental Monitoring Dashboard</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Temperature</h2>
+            <p id="temperature">25°C</p>
+            <button onclick="updateTemperature()">Update Temperature</button>
+        </div>
+
+        <div class="card">
+            <h2>Humidity</h2>
+            <p id="humidity">60%</p>
+            <button onclick="updateHumidity()">Update Humidity</button>
+        </div>
+
+        <div class="card">
+            <h2>Air Quality</h2>
+            <p id="airQuality">Good</p>
+            <span>AQI: <span id="aqi">50</span></span>
+            <button onclick="updateAirQuality()">Update Air Quality</button>
+        </div>
+
+        <div class="card">
+            <h2>Water Quality</h2>
+            <p id="waterQuality">Safe</p>
+            <span>pH: <span id="ph">7.2</span></span>
+            <button onclick="updateWaterQuality()">Update Water Quality</button>
+        </div>
+    </div>
+
+    <div id="crop-data" class="container">
+        <h2>Crop Data (Placeholder)</h2>
+        <p>This section can be used to display crop data or any other relevant environmental information.</p>
+    </div>
+
+    <div id="credits" class="footer">
+        <p>&copy; 2024 Environmental Monitoring System</p>
+        <p>Developed by [Your Name or Team]</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
